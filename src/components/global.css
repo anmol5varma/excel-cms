@@ -1,4 +1,11 @@
 a {
     color: #111;
     font-family: inherit;
+    word-break: break-all;
+}
+
+footer {
+    border-top: 1px solid #555;
+    text-align: center;
+    max-width: 960px;
 }

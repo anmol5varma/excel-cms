@@ -25,23 +25,38 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
+    <div
+      style={{
+        minHeight: `100vh`,
+        display: `flex`,
+        flexDirection: `column`
+      }}
+    >
       <Header siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
           margin: `0 auto`,
           maxWidth: 960,
           padding: `0 1.0875rem 1.45rem`,
+          display: `flex`,
+          flexDirection: `column`,
+          flexGrow: 1
         }}
       >
-        <main>{children}</main>
+        <main
+          style={{
+            flexGrow: 1,
+            display: `flex`,
+            flexDirection: `column`
+          }}
+        >{children}</main>
         <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
           Love &hearts;
         </footer>
       </div>
-    </>
+    </div>
   )
 }
 
