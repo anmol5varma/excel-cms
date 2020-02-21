@@ -29,6 +29,7 @@
   ],
   "license": "MIT",
   "scripts": {
+    "parse-excel": "node ./src/excel-parser.js",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
